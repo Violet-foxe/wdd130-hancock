@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* fonts */
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* base */
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --orange: #d94f00;
+    --charcoal: #1a1a1a;
+    --cream: #f2e8d5;
+
+}
+h1 {
+    font-family: "Righteous";
+}
+p {
+    font-family: "Montserrat";
+}
+img {
+    width: 200px;
+}
+body{
+    background: var(--charcoal);
+}
+
+/* title */
+.title {
+    background: var(--charcoal);
+    color: var(--orange);
+    padding: 20px;
+}
+
+/* nav */
+nav {
+    background: var(--orange);
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: 500;
+    width: 100vw;
+    border-top: var(--charcoal)  2px solid;
+    /* border-bottom: var(--charcoal)  2px solid; */
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0px auto;
+}
+nav a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color: var(--cream);
+}
+nav a:hover{
+    background: var(--charcoal);
+    color: var(--cream);
+}
+
+/* map */
+.homepage-map {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(31, 1fr);
+    width: 100vw;
+    height: 100vw;
+}
+.home-map {
+    grid-column: 1/31;
+    grid-row: 1/32;
+    width: 100%;
+    filter: invert(90%);
+    z-index: -1;
+}
+.home-logo {
+    grid-column: 1/31;
+    grid-row: 1/32;
+    width: 150px;
+    border: var(--cream) solid 2px;
+}
+.pins {
+    z-index: 1;
+}
+.pin2 {
+    width: 15px;
+    filter:invert(100%);
+    grid-column: 10/15;
+    grid-row: 14/20;
+    display: block;
+}
+.pin3 {
+    width: 15px;
+    grid-column: 10/15;
+    grid-row: 14/20;
+    display: block;
+}
+.pin4 {
+    width: 15px;
+    grid-column: 10/15;
+    grid-row: 14/20;
+    display: block;
+}
+
+/* footer */
+footer{
+    background: var(--charcoal);
+    color: var(--orange);
+    padding: 20px;
+    border-top: solid var(--orange) 2px;
+
+}
