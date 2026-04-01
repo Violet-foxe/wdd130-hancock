@@ -1,15 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/profilestyle.css">
 </head>
 <body>
-    <h1> Profile </h1>
-    <p>Al's Page</p>
+
+    <header class="title">
+        <h1>Profile / Settings</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="feed.html">Feed</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <main class="profile-container">
+        <section class="profile-header">
+            <img src="images/profile_pic.png" alt="User Profile" class="profile-pic">
+            <div class="user-info-box">
+                <h2 class="righteous-regular">Skater_Rex</h2>
+                <p>Local shredder. Always looking for the next 10-stair. Rexburg based.</p>
+            </div>
+        </section>
+
+        <section class="settings-box">
+            <h2 class="righteous-regular">Settings & Preferences</h2>
+            <div class="setting-item">
+            <p>Dark Mode</p>
+            <label class="toggle-container">
+                <input type="checkbox">
+                <span class="toggle-slider"></span>
+            </label>
+            </div>
+            <div class="setting-item">
+            <p>Public Profile</p>
+            <label class="toggle-container">
+                <input type="checkbox" checked>
+                <span class="toggle-slider"></span>
+            </label>
+            </div>
+            <div class="setting-item">
+                <p>Notifications</p>
+                <p class="setting-value">Enabled</p>
+            </div>
+            <div class="setting-item">
+                <p>Language</p>
+                <p class="setting-value">English</p>
+            </div>
+            <div class="setting-item">
+                <p>Account Privacy</p>
+                <p class="setting-value">Private</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; RexburgSkatespots</p>
+    </footer>
+
 </body>
 </html>
-<!-- username, short description -->
-<!-- setting/preferences. light mode dark mode, random -->
- <!-- all of it for show, no actual function -->
